@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+    <!-- PC Nav -->
+    <div class="container-fluid pc-nav">
+        <div class="row upper-nav padding-space justify-content-between">
+            <div class="col-auto">
+                <a href="#" class="reg-link">
+                    <h5 class=m-0>
+                        Register as Host
+                        <img src="imgs/codesandbox.png" alt="reg-logo" class="ms-2">
+                    </h5>
+                </a>
+            </div>
+            <div class="col-auto">
+                <span class="mx-4">
+                    <select class="cuurency-selector" id="">
+                        <option value="">SER</option>
+                        <option value="">USD</option>
+                    </select>
+                </span>
+                <span class="mx-4">
+                    <select class="lang-selector" id="">
+                        <option value="">AR</option>
+                        <option value="">EN</option>
+                    </select>
+                </span>
+                <span class="ms-4">
+                    <h6 class="d-inline-block">
+                        العربية
+                    </h6>
+                    <i class="fa-solid fa-globe mx-2"></i>
+                </span>
+            </div>
+        </div>
+        <div class="lower-nav row padding-space">
+            <div class="col-auto">
+                <div class="d-flex align-items-center h-100">
+
+                    <img src="imgs/Logo.png" alt="" class="nav-img">
+                </div>
+            </div>
+            <div class="col border nav-search-div mx-4 mx-lg-2 p-0 px-2">
+                <div class="d-flex align-items-center h-100">
+                    <button class="d-inline-block nav-search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class=" d-inline-block" placeholder="Search By Location">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-5 nav-links-spans">
+                <div class="d-flex align-items-center h-100">
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Workspace</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Offices</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Directory</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Community</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+            <div class="col-auto text-end user-nav-cont">
+                <a href="" class="btn login-link">Login<i class="fa-solid fa-lock mx-2"></i></a>
+                <a href="" class="btn get-start-link btn-danger mx-2">Get Started</a>
+                <!-- <div class="d-flex align-items-center justify-content-between h-100">
+                    Mohammed
+                    <img src="imgs/Ellipse 257asa.png" alt="" class="mx-2">
+                </div>
+                <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item nav-drop-item user-nav-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item nav-drop-item user-nav-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item user-nav-item" href="#">Something else here</a></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    <!-- MOB NAV -->
+    <div class="container-fluid mob-nav">
+        <div class="row pt-3">
+            <div class="col-auto">
+                <div class="d-flex align-items-center h-100">
+
+                    <img src="imgs/Logo.png" alt="" class="mob-nav-img">
+                </div>
+            </div>
+            <div class="col border nav-search-div  p-0 px-2">
+                <div class="d-flex align-items-center h-100">
+                    <button class="d-inline-block nav-search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class=" d-inline-block" placeholder="Search By Location">
+                </div>
+            </div>
+
+            <div class="col-auto text-end user-nav-cont">
+                <div class="d-flex align-items-center h-100">
+                    <i class="fa-solid fa-bars nav-bars rotate-icon" id="menu-icon"></i>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse nav-div p-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Workspace</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Offices</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Directory</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Community</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <!-- <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul> -->
+                    </li>
+                    <li class=" mt-4">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">
+                                    <img src="imgs/Ellipse 257asa.png" alt="" class="mx-2">
+                                    Mohammed
+                                </a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div class="content">
+        <p class="pofBut">© 2024 Workey. All rights reserved.</p>
+        <span><img class="pofimg" src="./imgs/FLoating Chat button.png" alt=""></span>
+        <section class="login">
+        </section>
+        <div class="FormOfLogin">
+
+            <form action="/submit_form" method="post">
+                <p class="text-center pOfL">Login to your account</p>
+                <label class="LabelOfEmail" for="name">Email/Phone number:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label class="LabelOfEmail" for="email">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <a href="./forgetpass.html">
+                    <p class="Forgot">Forgot password</p>
+                </a>
+                <img class="LOcPas" src="./imgs/lock-closed.png" alt="">
+                <img class="EyePass" src="./imgs/eye-off.png" alt="">
+
+                <input type="submit" value="Login">
+                <span class="loCIm"><img class="iconImg" src="./imgs/Icon.png" alt=""></span>
+                <span class="loCIm1"><img class="lockImg" src="./imgs/blacklock.png" alt=""></span>
+
+
+                <div class="LoginWithLinkedIn shadow">
+                    <span class="d-inline">
+                        <img class="d-inline" src="./imgs/Linkedin.png" alt="">
+                        <p class="d-inline">Login with LinkedIn</p>
+                    </span>
+                </div>
+
+                <div class="LoginWithGoogle shadow">
+                    <span class="d-inline">
+                        <img class="d-inline" src="./imgs/google.png" alt="">
+                        <p class="d-inline">Login with Google</p>
+                    </span>
+                </div>
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <!-- <footer class="pb-4">
+        <div class="upper-footer bg-dark row justify-content-between padding-space pt-4 pb-4 mx-0">
+            <div class="col-lg-5 col-12">
+                <h3>
+                    Get workey now
+                </h3>
+            </div>
+            <div class="col-lg-6 col-12 text-end stores">
+                <div class="row mx-0">
+                    <div class="col-6">
+                        <img src="imgs/Group (1).png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="imgs/App Store.png" alt="">
+                    </div>
+                </div>
+            </div>
+       </div> 
+       <div class="lower-footer row padding-space pt-5 pb-4 mx-0">
+            <div class="col-lg-4 col-12">
+                <img src="imgs/Logo.png" alt="">
+                <p class="mt-4">
+                    Elevate your workspace experience with Workey. Discover, book, and collaborate in vibrant co-working spaces effortlessly. Whether you're a freelancer seeking a creative hub or a startup looking for a dynamic environment, Workey connects you with inspiring spaces where innovation thrives. Start exploring today and unlock the perfect workspace tailored to your needs.  
+                </p>
+            </div>
+            <div class="col-lg col-4  ps-md-5 pt-lg-0 pt-4">
+                <b>Company</b>
+                <ul>
+                    <li>About</li>
+                    <li>Leadership</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Referral Program</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div class="col-lg col-4 ps-md-5  pt-lg-0 pt-4">
+                <b>Product</b>
+                <ul>
+                    <li>Overview</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Documentation</li>
+                    <li>Tools & Integration</li>
+                    <li>Releases</li>
+                </ul>
+            </div>
+            <div class="col-lg col-4 ps-md-5 pt-lg-0 pt-4">
+                <b>Support</b>
+                <ul>
+                    <li>Help centre</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                    <li>Press</li>
+                    <li>Status</li>
+                </ul>
+            </div>
+       </div>
+       <div class="copy-rights">
+            <div class="row justify-content-between padding-space mx-0">
+                <div class="col-lg-7 col-12">
+                    <div class="row">
+                        <div class="col text-center">Terms of Service</div>
+                        <div class="col text-center">Privacy Policy</div>
+                        <div class="col text-center">Security</div>
+                        <div class="col text-center">Sitemap</div>
+                    </div>
+                </div>
+                <div class="col lower-copy text-end">© 2024 Workey. All rights reserved.</div>
+            </div>
+       </div>
+    </footer> -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

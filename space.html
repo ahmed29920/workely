@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- PC Nav -->
+    <div class="container-fluid pc-nav">
+        <div class="row upper-nav padding-space justify-content-between">
+            <div class="col-auto">
+                <a href="#" class="reg-link">
+                    <h5 class=m-0>
+                        Register as Host
+                        <img src="imgs/codesandbox.png" alt="reg-logo" class="ms-2">
+                    </h5>
+                </a>
+            </div>
+            <div class="col-auto">
+                <span class="mx-4">
+                    <select class="cuurency-selector" id="">
+                        <option value="">SER</option>
+                        <option value="">USD</option>
+                    </select>
+                </span>
+                <span class="mx-4">
+                    <select class="lang-selector" id="">
+                        <option value="">AR</option>
+                        <option value="">EN</option>
+                    </select>
+                </span>
+                <span class="ms-4">
+                    <h6 class="d-inline-block">
+                        العربية
+                    </h6>
+                    <i class="fa-solid fa-globe mx-2"></i>
+                </span>
+            </div>
+        </div>
+        <div class="lower-nav row padding-space">
+            <div class="col-auto">
+                <div class="d-flex align-items-center h-100">
+
+                    <img src="imgs/Logo.png" alt="" class="nav-img">
+                </div>
+            </div>
+            <div class="col border nav-search-div mx-4 mx-lg-2 p-0 px-2">
+                <div class="d-flex align-items-center h-100">
+                    <button class="d-inline-block nav-search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class=" d-inline-block" placeholder="Search By Location">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-5 nav-links-spans">
+                <div class="d-flex align-items-center h-100">
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Workspace</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Offices</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Directory</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                    <span class="mx-xl-4 mx-lg-2 nav-link-cont">
+                        <a href="#" class="nav-link-text">Community</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item nav-drop-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item nav-drop-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+            <div class="col-auto text-end user-nav-cont">
+                <a href="" class="btn login-link">Login<i class="fa-solid fa-lock mx-2"></i></a>
+                <a href="" class="btn get-start-link btn-danger mx-2">Get Started</a>
+                <!-- <div class="d-flex align-items-center justify-content-between h-100">
+                    Mohammed
+                    <img src="imgs/Ellipse 257asa.png" alt="" class="mx-2">
+                </div>
+                <ul class="dropdown-menu bg-dark text-white" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item nav-drop-item user-nav-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item nav-drop-item user-nav-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item user-nav-item" href="#">Something else here</a></li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+    <!-- MOB NAV -->
+    <div class="container-fluid mob-nav">
+        <div class="row pt-3 pb-3">
+            <div class="col-auto">
+                <div class="d-flex align-items-center h-100">
+                    <img src="imgs/Logo.png" alt="" class="mob-nav-img">
+                </div>
+            </div>
+            <div class="col border nav-search-div  p-0 px-2">
+                <div class="d-flex align-items-center h-100">
+                    <button class="d-inline-block nav-search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class=" d-inline-block" placeholder="Search By Location">
+                </div>
+            </div>
+
+            <div class="col-auto text-end user-nav-cont">
+                <div class="d-flex align-items-center h-100">
+                    <i class="fa-solid fa-bars nav-bars rotate-icon" id="menu-icon"></i>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse nav-div p-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Workspace</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Offices</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Directory</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                    <li class="mob-nav-link-cont mt-3">
+                        <div class="d-flex justify-content-between">
+                            <span>
+                                <a class="mob-nav-link-text" href="#">Community</a>
+                            </span>
+                            <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <ul class="mob-nav-list d-none">
+                            <li class="mt-3">Action 1</li>
+                            <li class="mt-3">Action 2</li>
+                            <li class="mt-3">Action 3</li>
+                        </ul>
+                    </li>
+                    <!-- <li class=" mt-4">
+                        <div class="d-flex justify-content-between">
+                           <span>
+                               <a class="mob-nav-link-text" href="#">
+                                   <img src="imgs/Ellipse 257asa.png" alt="" class="mx-2">
+                                Mohammed
+                               </a>
+                           </span>
+                           <span class="show-mob-nav-list"><i class="fa-solid fa-chevron-down"></i></span>
+                       </div>
+                       <ul class="mob-nav-list d-none">
+                           <li class="mt-3">Action 1</li>
+                           <li class="mt-3">Action 2</li>
+                           <li class="mt-3">Action 3</li>
+                       </ul> 
+                   </li> -->
+                    <li class="mob-nav-link-cont mt-4"><a class="mob-nav-link-text">Login </a></li>
+                    <li class="mt-4"><a class="mob-nav-link-text">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content -->
+    <div class="content">
+        <div class="item-img-cont">
+            <div class="row mx-0">
+                <div class="col-md-6 col-12 p-0 ">
+                    <img src="imgs/Frame 335412.png" class="main-img h-100" alt="">
+                </div>
+                <div class="col-6 col-md-6 col-12 pt-md-0 pt-4">
+                    <div class="row">
+                        <div class="p-0 ps-md-3  col-6"><img src="imgs/Frame 335406.png" class="w-100 h-100" alt=""></div>
+                        <div class="p-0 ps-3 col-6"><img src="imgs/Frame 335407.png" class="w-100 h-100"  alt=""></div>
+                        <div class="p-0 ps-md-3 pt-3 col-6"><img src="imgs/Frame 335406 (1).png" class="w-100 h-100"  alt=""></div>
+                        <div class="p-0 ps-3 pt-3 col-6"><img src="imgs/Frame 335407 (1).png" class="w-100 h-100"  alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-details-cont padding-space row mx-0 mt-4 pt-4">
+            <div class="col-xl-9 col-lg-8 col-12 p-0">
+                <div class="item-main-titls">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="imgs/f7a2f52dfd8da9664c7155ae8faf11ce.png" alt=""  class="rounded-circle space-img ">
+                                </div>
+                                <div class="col-auto">
+                                    <div class="d-flex align-items-center h-100">
+                                        <h2 class="p-0 m-0">Servcorp</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex align-items-center space-label h-100 mt-md-0 mt-3">
+                                <!-- <div class="col-auto"> -->
+                                    <span class="text-center rounded-pill bg-warning text-dark py-1 px-2 mx-xl-2 mx-lg-1 mx-md-2 mx-1">
+                                        Meeting rooms
+                                    </span>
+
+                                <!-- </div> -->
+                                <!-- <div class="col-auto"> -->
+                                    <span class="text-center rounded-pill bg-warning text-dark py-1 px-2 mx-xl-2 mx-lg-1 mx-md-2 mx-1">
+                                        Meeting rooms
+                                    </span>
+
+                                <!-- </div> -->
+                                <!-- <div class="col-auto"> -->
+                                    <span class="text-center rounded-pill bg-warning text-dark py-1 px-2 mx-xl-2 mx-lg-1 mx-md-2 mx-1">
+                                        Meeting rooms
+                                    </span>
+
+                                <!-- </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                    <br>
+                    <span>
+                        <i class="text-warning fa-solid fa-star fa-lg"></i>
+                        <i class="text-warning fa-solid fa-star fa-lg"></i>
+                        <i class="text-warning fa-solid fa-star fa-lg"></i>
+                        <i class="text-warning fa-solid fa-star fa-lg"></i>
+                        <i class="text-warning fa-solid fa-star fa-lg"></i>
+                        <b class="ms-2">(5.0)</b>
+                    </span>
+                    <span>
+                        based on 1234 reviews
+                    </span>
+                    <br>
+                    <p class="mt-3 fs-5 d-inline-block item-address">
+                        <i class="fa-solid fa-location-dot me-2"></i>
+                        Building 1, Laysen Valley
+                    </p>
+                </div>
+                <div class="item-main-description mt-4">
+                    <h5>About</h5>
+                    <div class="row mt-4">
+                        <p>
+                            Servcorp operates in Saudi Arabia, providing premium serviced offices, virtual offices, and coworking spaces in key business districts. With a focus on offering high-quality workspace solutions, Servcorp caters to the needs of businesses across various industries, including startups, SMEs, and multinational corporations. Servcorp's offices in Saudi Arabia are equipped with state-of-the-art technology, professional support staff, and a range of amenities to ensure a productive and efficient work environment for its clients. Whether businesses require a prestigious office address, a fully equipped workspace, or virtual office services, Servcorp in Saudi Arabia offers flexible solutions to meet their needs.
+                        </p>
+                    </div>
+                    <h5 class="mt-4 mb-3">Facilities</h5>
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-6">
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                        </div>
+                        <div class="col-xl-10 col-lg-9 col-6">
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-check item-check-icon"></i> Whiteboard</p>
+                        </div>
+                    </div>
+                    <h5 class="mt-4 mb-3">Available Add-ons</h5>
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-6">
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                        </div>
+                        <div class="col-xl-10 col-lg-9 col-6">
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                            <p> <i class="me-2 fa-solid fa-circle-plus item-plus-icon"></i> Whiteboard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-12">
+                <div class="row mx-0">
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <h5>Plans</h5>
+                        <div class="plan-cont p-3 mt-4">
+                            <h6 class="mt-3"> <span class="fs-5">10 SAR</span> / Hour </h6>
+                            <h6 class="mt-3"> <span class="fs-5">70 SAR</span> / Day-Pass </h6>
+                            <hr class="plan-hr">
+                            <button class="btn btn-danger w-100">Get Pass <i class="fa-solid fa-key mx-2"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-12">
+                        <h5 class="mt-lg-5 mt-md-0 mt-5 mb-3">Location</h5>
+                        <div class="location-cont p-3 mt-4 text-center">
+                            <button class="btn btn-dark  get-location-btn">Get Directions</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h5 class="mt-5 mb-3">Working hours</h5>
+                <a class="schedule-link" data-bs-toggle="modal" data-bs-target="#hoursModel">
+                    Check our schedule
+                    <i class="fa-regular fa-clock fa-lg ms-2"></i>
+                </a>
+                <div class="modal fade" id="hoursModel" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg time-modal-dialog border-4">
+                        <div class="modal-content">
+                            <div class="modal-header border-0">
+                                <h1 class="modal-title fs-3" id="exampleModalLabel">Working Hours</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4"></div>
+                                    <div class="col-4 text-center">Day Shift</div>
+                                    <div class="col-4 text-center">Night Shift</div>
+                                </div>
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4">Saturday</div>
+                                    <div class="col-4 text-center">09:00 am - 06:00 pm</div>
+                                    <div class="col-4 text-center">06:00 pm - 12:00 pm</div>
+                                </div>
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4">Sunday</div>
+                                    <div class="col-4 text-center">09:00 am - 06:00 pm</div>
+                                    <div class="col-4 text-center">06:00 pm - 12:00 pm</div>
+                                </div>
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4">Monday</div>
+                                    <div class="col-4 text-center">09:00 am - 06:00 pm</div>
+                                    <div class="col-4 text-center">06:00 pm - 12:00 pm</div>
+                                </div>
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4">Tuesday</div>
+                                    <div class="col-4 text-center">09:00 am - 06:00 pm</div>
+                                    <div class="col-4 text-center">06:00 pm - 12:00 pm</div>
+                                </div>
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4">Wednesday</div>
+                                    <div class="col-4 text-center">09:00 am - 06:00 pm</div>
+                                    <div class="col-4 text-center">06:00 pm - 12:00 pm</div>
+                                </div>
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4">Thursday</div>
+                                    <div class="col-4 text-center">09:00 am - 06:00 pm</div>
+                                    <div class="col-4 text-center">06:00 pm - 12:00 pm</div>
+                                </div>
+                                <div class="row time-table-row mx-md-3 mx-1 p-2">
+                                    <div class="col-4">Friday</div>
+                                    <div class="col-4 text-center">09:00 am - 06:00 pm</div>
+                                    <div class="col-4 text-center">06:00 pm - 12:00 pm</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-images-cont padding-space">
+            <h5 class="mt-5 mb-3 ">Available Spaces</h5>
+            <div class="row mt-5 mb-4">
+                <div class="col-auto space-type-filter-col h-100 mt-md-0 mt-2">
+                    <div class="d-flex align-items-center h-100">
+                        <p class="rounded-circle space-type-filter-icon p-2 m-0">
+                            <i class="fa-solid fa-sliders fa-lg m-1"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-auto space-type-filter-col sapce-type-filter-item mx-md-2 mx-1  mt-md-0 mt-2" data-type="Workspace">
+                    <div class="d-flex align-items-center h-100">
+                        Workspace
+                    </div>
+                </div>
+                <div class="col-auto space-type-filter-col sapce-type-filter-item mx-md-2 mx-1  mt-md-0 mt-2" data-type="Shared office">
+                    <div class="d-flex align-items-center h-100">
+                        Shared office
+                    </div>
+                </div>
+                <div class="col-auto space-type-filter-col sapce-type-filter-item mx-md-2 mx-1  mt-md-0 mt-2" data-type="Private office">
+                    <div class="d-flex align-items-center h-100">
+                        Private office
+                    </div>
+                </div>
+                <div class="col-auto space-type-filter-col sapce-type-filter-item mx-md-2 mx-1  mt-md-0 mt-2" data-type="Meeting room">
+                    <div class="d-flex align-items-center h-100">
+                        Meeting room
+                    </div>
+                </div>
+                <div class="col-auto space-type-filter-col sapce-type-filter-item mx-md-2 mx-1  mt-md-0 mt-2" data-type="Studio">
+                    <div class="d-flex align-items-center h-100">
+                        Studio
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Meeting room">
+                    <div class="space-card">
+                        <img src="imgs/16cf9c3e0d3a714ccf73c7d4d8198453.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>Meeting Room 1</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>80</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">12 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Shared office">
+                    <div class="space-card">
+                        <img src="imgs/ac4a6681f671a67ed432606202c396ac.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>office 2</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>30</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">1 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Meeting room">
+                    <div class="space-card">
+                        <img src="imgs/b4763c5d22fa134ca068236c24ed9fc2.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>Meeting Room 2</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>60</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">8 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Workspace">
+                    <div class="space-card">
+                        <img src="imgs/c06403cde2b8ca58ceb149d3dd215ad7.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>Lounge 3</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>20</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">1 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Workspace">
+                    <div class="space-card">
+                        <img src="imgs/7627dfe85c4b523066d582853012a369.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>Lounge 2</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>15</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">1 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Meeting room">
+                    <div class="space-card">
+                        <img src="imgs/e30eb74556dc1440992ebe9df54aaf9d.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>Meeting Room 3</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>50</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">4 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Private office">
+                    <div class="space-card">
+                        <img src="imgs/ac2597e673e6e84a002b4e581de26439.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>Office 1</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>35</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">1 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="available-space-item col-xl-3 col-md-4 col-12 p-3" data-type="Meeting room">
+                    <div class="space-card">
+                        <img src="imgs/11a1fd8a8f4fecb99d6a671e63a93793.jpg" alt="" class="space-card-img w-100">
+                        <div class="row mx-0 mt-2">
+                            <div class="col-9">
+                                <h5>Meeting Room 4</h5>
+                            </div>
+                            <div class="col-3 text-danger p-0">
+                                <b>120</b> SAR
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-3">
+                            <div class="col-9">
+                                Capacity: <span class=" text-secondary">16 Persons</span> 
+                            </div>
+                            <div class="col-3 p-0 space-card-type-text" >
+                                Day-Pass
+                            </div>
+                        </div>
+                        <div class="row mx-0 mt-4 mb-2">
+                            <div class="col-12">
+                                <a href="item.html" class="btn text-center w-100 preview-btn">Preview</a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="item-review-cont mx-0">
+            <h5 class="mt-5 mb-3 padding-space">Client Testimonials: Hear What Others Are Saying</h5>
+            <div class="item-rev-slider mt-5 pt-4">
+                <div class="rev">
+                    <div class="rev-content p-3">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="imgs/Icons.png" alt="">
+                            </div>
+                            <div class="col">
+                                <p class="p-0 m-0"><b>Khalid Al-Ghamdi</b></p>
+                                <p class="text-secondary p-0 m-0">Start Up Founder</p>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mx-0">
+                            <div class="col-12">
+                                <h6 class="fs-6">
+                                    "Great value for money. Servcorp's virtual office in Saudi Arabia offers convenience
+                                    and prestige. Highly recommended."
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rev">
+                    <div class="rev-content p-3">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="imgs/Icons1.png" alt="">
+                            </div>
+                            <div class="col">
+                                <p class="p-0 m-0"><b>Fatima Al-Mansour</b></p>
+                                <p class="text-secondary p-0 m-0">Marketing</p>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mx-0">
+                            <div class="col-12">
+                                <h6 class="fs-6">
+                                    "Exceptional service and facilities. Highly recommend Servcorp's workspace in Saudi
+                                    Arabia for professional needs."
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rev">
+                    <div class="rev-content p-3">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="imgs/Icons4.png" alt="">
+                            </div>
+                            <div class="col">
+                                <p class="p-0 m-0"><b>Ahmed Al-Mutairi</b></p>
+                                <p class="text-secondary p-0 m-0">Freelance Graphic Designer</p>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mx-0">
+                            <div class="col-12">
+                                <h6 class="fs-6">
+                                    "Impressive coworking space. Well-designed, equipped, and conducive to
+                                    collaboration. Friendly and attentive staff."
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rev">
+                    <div class="rev-content p-3">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="imgs/Icons2.png" alt="">
+                            </div>
+                            <div class="col">
+                                <p class="p-0 m-0"><b>Yasmin Al-Farsi</b></p>
+                                <p class="text-secondary p-0 m-0">User Experience Designer</p>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mx-0">
+                            <div class="col-12">
+                                <h6 class="fs-6">
+                                    “Top-notch facilities and service. Comfortable coworking space with excellent
+                                    amenities. Friendly and helpful staff.”
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rev">
+                    <div class="rev-content p-3">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img src="imgs/Icons.png" alt="">
+                            </div>
+                            <div class="col">
+                                <p class="p-0 m-0"><b>Omar Al-Rashid</b></p>
+                                <p class="text-secondary p-0 m-0">Event Planner</p>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mx-0">
+                            <div class="col-12">
+                                <h6 class="fs-6">
+                                    “Excellent meeting facilities. Spacious, well-equipped, and professionally managed.
+                                    Staff provided exceptional support.”
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item-ratings padding-space mx-2 mb-5">
+            <h5 class="mt-5 mb-4 ">Ratings</h5>
+            <span>
+                <i class="fa fa-star fa-xl" aria-hidden="true"></i>
+                <i class="fa fa-star fa-xl" aria-hidden="true"></i>
+                <i class="fa fa-star fa-xl" aria-hidden="true"></i>
+                <i class="fa fa-star fa-xl" aria-hidden="true"></i>
+                <i class="fa fa-star fa-xl" aria-hidden="true"></i>
+            </span>
+            <h6 class="mt-3">
+                Based on 1234 reviews
+            </h6>
+            <div class="revs-rows  mt-5 mx-0">
+                <div class="row mt-3">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center h-100">
+                            <h5  class="p-0 m-0">
+                                5 <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <b>
+                                    1140 Reviews
+                                </b>
+                            </div>
+                            <div class="col-auto">
+                                <b>
+                                    95%
+                                </b>
+                            </div>
+                        </div>
+                        <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning rounded-pill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center h-100">
+                            <h5  class="p-0 m-0">
+                                4 <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <b>
+                                    35 Reviews
+                                </b>
+                            </div>
+                            <div class="col-auto">
+                                <b>
+                                    15%
+                                </b>
+                            </div>
+                        </div>
+                        <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning rounded-pill" style="width: 15%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center h-100">
+                            <h5  class="p-0 m-0">
+                                3 <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <b>
+                                    20 Reviews
+                                </b>
+                            </div>
+                            <div class="col-auto">
+                                <b>
+                                    5%
+                                </b>
+                            </div>
+                        </div>
+                        <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning rounded-pill" style="width: 5%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center h-100">
+                            <h5  class="p-0 m-0">
+                                2 <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <b>
+                                    7 Reviews
+                                </b>
+                            </div>
+                            <div class="col-auto">
+                                <b>
+                                    0.5%
+                                </b>
+                            </div>
+                        </div>
+                        <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning rounded-pill" style="width: 0.5%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-auto">
+                        <div class="d-flex align-items-center h-100">
+                            <h5 class="p-0 m-0">
+                                1 <i class="fa fa-star mx-1" aria-hidden="true"></i>
+                        </div>
+                        </h5>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <b>
+                                    6 Reviews
+                                </b>
+                            </div>
+                            <div class="col-auto">
+                                <b>
+                                    0.5%
+                                </b>
+                            </div>
+                        </div>
+                        <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-warning rounded-pill" style="width: 0.5%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="pb-4">
+        <div class="upper-footer bg-dark row justify-content-between padding-space pt-4 pb-4 mx-0">
+            <div class="col-lg-5 col-12">
+                <h3>
+                    Get workey now
+                </h3>
+            </div>
+            <div class="col-lg-6 col-12 text-end stores">
+                <div class="row mx-0">
+                    <div class="col-6">
+                        <img src="imgs/Group (1).png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="imgs/App Store.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer row padding-space pt-5 pb-4 mx-0">
+            <div class="col-lg-4 col-12">
+                <img src="imgs/Logo.png" alt="">
+                <p class="mt-4">
+                    Elevate your workspace experience with Workey. Discover, book, and collaborate in vibrant co-working
+                    spaces effortlessly. Whether you're a freelancer seeking a creative hub or a startup looking for a
+                    dynamic environment, Workey connects you with inspiring spaces where innovation thrives. Start
+                    exploring today and unlock the perfect workspace tailored to your needs.
+                </p>
+            </div>
+            <div class="col-lg-3 col-4  ps-md-5 pt-lg-0 pt-4">
+                <b>Company</b>
+                <ul>
+                    <li>About</li>
+                    <li>Leadership</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Referral Program</li>
+                    <li>Community</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-4 ps-md-5  pt-lg-0 pt-4">
+                <b>Product</b>
+                <ul>
+                    <li>Overview</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Documentation</li>
+                    <li>Tools & Integration</li>
+                    <li>Releases</li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-4 ps-md-5 pt-lg-0 pt-4">
+                <b>Support</b>
+                <ul>
+                    <li>Help centre</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                    <li>Press</li>
+                    <li>Status</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy-rights">
+            <div class="row justify-content-between padding-space mx-0">
+                <div class="col-lg-7 col-12">
+                    <div class="row">
+                        <div class="col text-center">Terms of Service</div>
+                        <div class="col text-center">Privacy Policy</div>
+                        <div class="col text-center">Security</div>
+                        <div class="col text-center">Sitemap</div>
+                    </div>
+                </div>
+                <div class="col lower-copy text-end">© 2024 Workey. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

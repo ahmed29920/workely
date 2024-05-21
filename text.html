@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Include Bootstrap Datepicker CSS and JS -->
+    <!-- Air Datepicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <!-- Air Datepicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <!-- Optional: Air Datepicker localization (e.g., English) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script>
+    <title>Custom Date Picker</title>
+    <style>
+        body {
+            font-family: 'Exo 2', sans-serif;
+            background-color: #f8ceec;
+            height: 100%;
+        }
+        .blocked-date {
+            text-decoration: line-through; /* Cross out the text */
+            color: #999; /* Faded color for the crossed out dates */
+            pointer-events: none; /* Disable pointer events for the crossed out dates */
+        }
+        .container {
+            max-width: 600px;
+        }
+
+        .box {
+            padding: 50px;
+            background: #ffffff;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .box h3 {
+            text-align: center;
+            padding: 0 0 30px 0;
+        }
+
+        .box .form-control {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .datepicker {
+            font-family: 'Exo 2', sans-serif;
+        }
+
+        .datepicker--cell.-range-to- {
+            background: rgba(248, 206, 236, 0.4);
+            border-color: rgba(248, 206, 236, 1);
+        }
+
+        .datepicker--cell.-current- {}
+
+        .datepicker--cell.-selected-,
+        .datepicker--cell.-selected-.-focus- {
+            background-color: #f8ceec;
+            color: #000000;
+        }
+
+        .datepicker--cell.-in-range- {
+            background: rgba(248, 206, 236, 0.2);
+        }
+
+        .datepicker--cell-day {
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .form-control {
+            height: 50px;
+            font-size: 16px;
+            color: #414D64;
+            background: #ffffff;
+            padding: 0 15px;
+            border: 2px solid #DADEEA;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        textarea.form-control {
+            height: 120px;
+            padding-top: 15px;
+        }
+
+        .form-control-plaintext {
+            font-size: 18px;
+            color: #434343;
+        }
+
+        button.form-control {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .form-control:focus {
+            border-color: #37B448;
+            -webkit-box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
+            -moz-box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
+            box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="p-5">
+            <div class="container">
+                <div class="box">
+                    <h3>air-datepicker Range Example</h3>
+                    <input type="text" class="datepicker-here form-control" id="minMaxExample"
+                        data-date-format="dd/mm/yyyy" data-language='en' placeholder="Select Range">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var mindate = new Date();
+            mindate.setDate(mindate.getDate() - 8);
+            var maxdate = new Date();
+            maxdate.setDate(maxdate.getDate() - 1);
+            $('#minMaxExample').datepicker({
+                language: 'en',
+                range: true,
+                minDate: mindate,
+                maxDate: maxdate,
+                multipleDates: true,
+                multipleDatesSeparator: " - ",
+                onRenderCell: function (date, cellType) {
+                    if (cellType === 'day') {
+                        var currentDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+                        // Define your blocked out dates here
+                        var blockedDates = ['10/04/2024', '15/04/2024', '20/04/2024'];
+                        if (blockedDates.indexOf(currentDate) !== -1) {
+                            return {
+                                classes: 'blocked-date' // Add the blocked-date class to the cell
+                            };
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

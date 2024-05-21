@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom item-img-Slider</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .item-img-slider {
+            position: relative;
+            /* Add position relative */
+            width: 100vw;
+            overflow-x: scroll;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+
+        .item-img-slider img {
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        @media screen and (max-width : 768px) {
+            .item-img-slider img {
+                width: 25%;
+            }
+        }
+
+        .item-img-slider:before,
+        .item-img-slider:after {
+            content: '';
+            width: 10%;
+            /* Half the width of one image */
+            display: inline-block;
+        }
+
+        .item-img-slider:before img {
+            visibility: hidden;
+            /* Hide the first "half image 0" by default */
+        }
+
+        .item-img-prev-btn,
+        .item-img-next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .item-img-prev-btn {
+            left: 0;
+        }
+
+        .item-img-next-btn {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item-img-slider">
+        <img src="https://via.placeholder.com/600x400?text=Image1" alt="Image 1">
+        <img src="https://via.placeholder.com/600x400?text=Image2" alt="Image 2">
+        <img src="https://via.placeholder.com/600x400?text=Image3" alt="Image 3">
+        <img src="https://via.placeholder.com/600x400?text=Image4" alt="Image 4">
+        <img src="https://via.placeholder.com/600x400?text=Image5" alt="Image 5">
+        <img src="https://via.placeholder.com/600x400?text=Image6" alt="Image 5">
+        <img src="https://via.placeholder.com/600x400?text=Image7" alt="Image 5">
+        <img src="https://via.placeholder.com/600x400?text=Image8" alt="Image 5">
+        <img src="https://via.placeholder.com/600x400?text=Image9" alt="Image 5">
+        <img src="https://via.placeholder.com/600x400?text=Image10" alt="Image 5">
+    </div>
+    <div class="item-img-prev-btn">&lt;</div>
+    <div class="item-img-next-btn">&gt;</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var imgCount = $('.item-img-slider img').length;
+            var imgWidth = $('.item-img-slider img').width();
+            var visibleImages = 3;
+            $('.item-img-slider').on('scroll', function () {
+                var scrollLeft = $(this).scrollLeft();
+                var maxScrollLeft = imgWidth * (imgCount - visibleImages);
+                if (scrollLeft === 0) {
+                    $('.item-img-slider:before img').css('visibility', 'visible');
+                } else {
+                    $('.item-img-slider:before img').css('visibility', 'hidden');
+                }
+                if (scrollLeft >= maxScrollLeft) {
+                    $(this).scrollLeft(imgWidth);
+                } else if (scrollLeft === 0) {
+                    $(this).scrollLeft(imgWidth * (imgCount - visibleImages));
+                }
+            });
+            $('.item-img-prev-btn').click(function () {
+                $('.item-img-slider').animate({ scrollLeft: '-=' + imgWidth }, 'slow');
+            });
+            $('.item-img-next-btn').click(function () {
+                $('.item-img-slider').animate({ scrollLeft: '+=' + imgWidth }, 'slow');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
